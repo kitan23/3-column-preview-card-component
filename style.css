@@ -1,0 +1,137 @@
+:root {
+  --br-orange: hsl(31, 77%, 52%);
+  --dk-cyan: hsl(184, 100%, 22%);
+  --vdk-cyan: hsl(179, 100%, 13%);
+  --trns-white: hsla(0, 0%, 100%, 0.75);
+  --lg-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+}
+
+img {
+  width: 30%;
+}
+
+.screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4rem 0;
+}
+
+.attribution {
+  color: black;
+}
+
+.main {
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.main .card {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem;
+}
+
+.main .card:nth-child(1) {
+  background-color: var(--br-orange);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main .card:nth-child(2) {
+  background-color: var(--dk-cyan);
+}
+
+.main .card:nth-child(3) {
+  background-color: var(--vdk-cyan);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card img {
+  margin: 20px;
+}
+
+.card .name {
+  margin: 15px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.card .des {
+  margin: 20px;
+  color: var(--trns-white);
+}
+
+.card a {
+  border: white 1px solid;
+  margin: 20px;
+  margin-top: 40px;
+  width: 40%;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: white;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.card .lm1 {
+  color: orange;
+}
+
+.card .lm2 {
+  color: #2e7e7a;
+}
+
+.card .lm3 {
+  color: #03534d;
+}
+
+@media screen and (min-width: 800px) {
+  .screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+  }
+  .main .card:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .main .card:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
